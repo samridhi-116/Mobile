@@ -1,0 +1,33 @@
+Mobile Apps
+
+1. Social media apps
+	# Whatsapp
+	# Instagram
+	# Facebook
+	# Snapchat
+	# Twitter
+	# Telegram
+
+2. Music aaps
+	# Spotify
+	# Amazon Prime Music
+
+3. Entertainment aaps
+	# Netflix
+	# Amazon Prime
+
+4. Gaming
+	#....
+	#....
+
+5. Tools
+	# Calculator
+	# Notes
+	# Compass
+	# Calander
+	# Clock
+	# Weather
+
+6. Albums (will include few pictures)
+
+7. Videos (will include few videos)

@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        
+        .bar {
+            width: 100%;
+            height: 550px;
+            display: flex;
+            flex-direction: row;
+            border: inherit;
+        }
+        
+        .show {
+            width: 450px;
+            height: 100%;
+            border: inherit;
+        }
+        
+        .col {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #tree {
+            width: 450px;
+            background-color: #006969;
+        }
+        
+        #flow {
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        
+        #setting {
+            width: 450px;
+            height: 100%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="tree">
+        <div id="flow">
+            <div class="bar">
+                <div class="show">
+                    <div id="setting" style="overflow-y:scroll"
+                     ::-webkit-scrollbar {
+                        width: 5px;
+                    }
+                    
+                     ::-webkit-scrollbar-thumb {
+                        background: #555;
+                    }> 
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+                        </script>
+                        <script>
+                            $("document").ready(function() {
+                                $("#wall").hide();
+                                $("#bton").click(function() {
+                                    $("#setting").slideUp();
+                                    $("#div2").show();
+                                });
+                                $("#Hide").click(function() {
+                                    $("#wall").slideToggle();
+                                });
+                                $("#orange").click(function() {
+                                    $("#tree").css("background-color", "#F40");
+                                    $("footer").css("background-color", "orange");
+                                    $("#outer").css("background-color", "orange");
+                                });
+                                $("#skyblue").click(function() {
+                                    $("#tree").css("background-color", "skyblue");
+                                    $("footer").css("background-color", "#ACBEEE");
+                                    $("#outer").css("background-color", "#ACBEEE");
+                                });
+                                $("#lagoon").click(function() {
+                                    $("#tree").css("background-color", "#ACBEEE");
+                                    $("footer").css("background-color", "skyblue");
+                                    $("#outer").css("background-color", "skyblue");
+                                });
+                                $("#white").click(function() {
+                                    $("#tree").css("background-color", "gray");
+                                    $("footer").css("background-color", "lightgray");
+                                    $("#outer").css("background-color", "lightgray");
+                                });
+                                $("#kindaLagoon").click(function() {
+                                    $("#tree").css("background-color", "#006969");
+                                    $("footer").css("background-color", "lightblue");
+                                    $("#outer").css("background-color", "rgb(154, 213, 231)");
+                                });
+                            });
+                        </script>
+                        <style>
+                            h2 {
+                                width: 80vw;
+                            }
+                            
+                            h1 {
+                                width: 80vw;
+                            }
+                            
+                            h3 {
+                                width: 80vw;
+                            }
+                            
+                            #wall {
+                                padding-top: 1vw;
+                                background-color: lightgray;
+                                border-radius: 20px;
+                            }
+                        </style>
+                        <div style="display:flex;width:100%;">
+                            <button id="bton" style="height:60px;width:60px;border-radius: 10%;">
+                                <= </button>
+                            <center>
+                                <h1>Setting
+                                </h1>
+                            </center>
+                        </div>
+                        <div style="display:flex;width:100%;">
+                            <h2> Wallpaper</h2>
+                            <button id="Hide" style="height:60px;width:60px;border-radius: 10%;padding:0px;">Reveal</button>
+                        </div>
+                        <div id="wall">
+                            <div style="display:flex;width:100%;">
+                                <h3>
+                                    Oranges
+                                </h3>
+                                <button id="orange" style="height:60px;width:50px;border-radius: 10%;padding:0px;">
+                                    Change
+                                </button>
+                            </div>
+
+                            <div style="display:flex;width:100%;">
+                                <h3> Sky Blue</h3>
+                                <button id="skyblue" style="height:60px;width:50px;border-radius: 10%;padding:0px;">
+                                    Change
+                                </button>
+                            </div>
+
+                            <div style="display:flex;width:100%;">
+                                <h3>Lagoon</h3>
+                                <button id="lagoon" style="height:60px;width:50px;border-radius: 10%;padding:0px;">
+                                    Change
+                                </button>
+                            </div>
+
+                            <div style="display:flex;width:100%;">
+                                <h3>Gray</h3>
+                                <button id="white" style="height:60px;width:50px;border-radius: 10%;padding:0px;">
+                                    Change
+                                </button>
+                            </div>
+
+                            <div style="display:flex;width:100%;">
+                                <h3>Kinda Lagoon</h3>
+                                <button id="kindaLagoon" style="height:60px;width:50px;border-radius: 10%;padding:0px;">
+                                    Change
+                                </button>
+                            </div>
+                        </div>
+                        <div style="display:flex;width:100%;">
+                            <h2>Body Color</h2>
+                            <button style="height:60px;width:60px;border-radius: 10%;padding:0px;"> Reveal</button>
+                        </div>
+                        <div style="display:flex;width:100%;">
+                            <h2>Themes</h2>
+                            <button style="height:60px;width:60px;border-radius: 10%;padding:0px;"> Reveal</button>
+                        </div>
+                    </div>
+                    <div id="div1" style="width:450px;">
+                        sdahkujilsdlkjbdhjklo;dasodcjbhdadjkl;adasdadsad
+                    </div>
+                </div>
+                <div id="div2" class="show">
+                    <script>
+                        function clock() {
+                            var date = new Date();
+                            var weekday = date.getDay();
+                            var year = date.getYear();
+                            var month = date.getMonth();
+                            var day = date.getDate();
+                            var hour = date.getHours();
+                            var minute = date.getMinutes();
+                            var second = date.getSeconds();
+                            var days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+                            var months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
+                            var monthname = months[month];
+                            var dayname = days[weekday];
+                            var ap;
+                            if (year < 1000) {
+                                year = year + 1900
+                            }
+                            if (hour >= 12) {
+                                hour = hour - 12;
+                                ap = 'PM'
+                            } else {
+                                ap = 'AM'
+                            }
+                            if (minute < 10) {
+                                minute = '0' + minute
+                            }
+                            if (second < 10) {
+                                second = '0' + second
+                            };
+                            document.getElementById('time').innerHTML = hour + ' : ' + minute + ' : ' + second + ' ' + ap;
+                            document.getElementById('da').innerHTML = dayname;
+                            document.getElementById('dt').innerHTML = monthname + ' ' + day + ', ' + year;
+                            setTimeout('clock()', 1000)
+                        }
+                        window.onload = function() {
+                            clock()
+                        }
+                    </script>
+                    <style>
+                        #outer {
+                            width: 440px;
+                            text-align: center;
+                            margin-bottom: 54%;
+                            margin-top: 7px;
+                            margin-right: 2%;
+                            background-color: rgb(154, 213, 231);
+                            border-radius: 40px;
+                        }
+                        
+                        #cover {
+                            padding: 4px 0;
+                            border: inherit;
+                        }
+                        
+                        #dt,
+                        #time {
+                            text-align: center;
+                            padding: 3px;
+                            font-weight: 500;
+                            font-size: 25px;
+                            font-family: -apple-system, Roboto;
+                        }
+                        
+                        #dt {
+                            margin-left: 5vw;
+                        }
+                        
+                        #time {
+                            font-size: 30px;
+                        }
+                        
+                        #da {
+                            margin-left: 17vw;
+                            padding: 3px;
+                            font-weight: 500;
+                            font-size: 25px;
+                            font-family: -apple-system, Roboto;
+                        }
+                        
+                        #home {
+                            border: inherit;
+                            padding: 2px;
+                            padding-right: 4px;
+                            width: 99%;
+                            height: 99%;
+                            background-color: inherit;
+                        }
+                        
+                        .img {
+                            height: 17%;
+                            width: 97%;
+                            margin-left: 0.5%;
+                            margin-right: 0.5%;
+                            border: inherit;
+                        }
+                        
+                        input {
+                            height: 70px;
+                            width: 70px;
+                            border-radius: 10px;
+                            margin-left: 2.5%;
+                            padding-top: 2%;
+                        }
+                        
+                        .scroll {
+                            height: 4%;
+                        }
+                        
+                        book {
+                            margin-left: 3%;
+                            text-align: center;
+                        }
+                    </style>
+
+                    <div id="home">
+                        <!--Div id for time and date-->
+                        <center>
+                            <div id=outer>
+                                <div class='acb'></div>
+                                <div id=cover>
+                                    <div id=time></div>
+                                    <div id=dt></div>
+                                    <div id=da></div>
+                                </div>
+                            </div>
+                        </center>
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+                        </script>
+                        <script>
+                            $("document").ready(function() {
+                                $("#setting").hide();
+                                $("#Cooking").click(function() {
+                                    window.open("https://hebbarskitchen.com", "_self")
+                                });
+                                $("#Music").click(function() {
+                                    window.open("music.html", "_self")
+                                });
+                                $("#Books").click(function() {
+                                    window.open("https://openlibrary.org/dev/docs/bookreader", "_self")
+                                });
+                                $("#HexGL").click(function() {
+                                    window.open("http://hexgl.bkcore.com/play/", "_self")
+                                });
+                                $("#Tutorial").click(function() {
+                                    window.open("https://www.tutorialrepublic.com/", "_self")
+                                });
+                                $("#Maps").click(function() {
+                                    window.open("https://www.mapquest.com/my-maps", "_self")
+                                });
+                                $("#Mail").click(function() {
+                                    window.open("https://www.tutorialrepublic.com/", "_self")
+                                });
+                                $("#Videos").click(function() {
+                                    window.open("video.html", "_self")
+                                });
+                                $("#Album").click(function() {
+                                    window.open("Pictures/album.html", "_self")
+                                });
+                                $("#Settings").click(function() {
+                                    $("#setting").slideDown();
+                                    $("#div2").hide();
+                                });
+                                $("#Contacts").click(function() {
+                                    window.open("https://forms.gle/Bv7nygZm1xvJ8hUG9", "_self")
+                                });
+                                $("#Tutorial").click(function() {
+                                    window.open("https://www.tutorialrepublic.com/", "_self")
+                                });
+                                $("#News").click(function() {
+                                    window.open("https://inshorts.com/en/read/", "_self")
+                                });
+                                $("#Camera").click(function() {
+                                    window.open("camera.html", "_self")
+                                });
+                                $("#2048").click(function() {
+                                    window.open("https://play2048.co/", "_self")
+                                });
+                                $("#Phone").click(function() {
+                                    window.open("Phone.html", "_self")
+                                });
+                                $("#Compass").click(function() {
+                                    window.open("https://lamplightdev.github.io/compass/", "_self")
+                                });
+                                $("#Browser").click(function() {
+                                    window.open("https://archive.org/", "_self")
+                                });
+                                $("#Dice").click(function() {
+                                    window.open("http://jsgames.sourceforge.net/marbles.html", "_self")
+                                });
+                                $("#Calculator").click(function() {
+                                    window.open("calculator.html", "_self")
+                                });
+                                $("#Weather").click(function() {
+                                    window.open("https://www.accuweather.com/", "_self")
+                                });
+
+                            });
+                        </script>
+
+                        <div class="img row">
+
+                            <book>
+                                <input type="image" src="icon\cooking.jpg" id="Cooking">
+                                <z>Cook</z>
+                            </book>
+                            <book>
+                                <input type="image" src="icon\books.png" id="Books">
+                                <z>Books</z>
+                            </book>
+                            <book>
+                                <input type="image" src="icon\apple-music.png" id="Music">
+                                <z>Music</z>
+                            </book>
+                            <book>
+                                <input type="image" src="icon\racing icon.png" id="HexGL">
+                                <z>HexGL</z>
+                            </book>
+                            <book>
+                                <input type="image" src="icon\tutorial icon.png" id="Tutorial">
+                                <z>Tutorial</z>
+                            </book>
+                        </div>
+                        <div class="img row">
+                            <book>
+                                <input type="image" src="icon\maps.png" id="Maps">
+                                <z>Maps</z>
+                            </book>
+                            <book>
+                                <input type="image" src="icon\mail.png" id="Mail">
+                                <z>Mail</z>
+                            </book>
+                            <book>
+                                <input type="image" src="icon\clips.png" id="Videos">
+                                <z>Videos</z>
+                            </book>
+                            <book>
+                                <input type="image" src="icon\photos.png" id="Album">
+                                <z>Album</z>
+                            </book>
+                            <book>
+                                <input type="image" src="icon\settings.png" id="Settings">
+                                <z>Settings</z>
+                            </book>
+                        </div>
+                        <div class="scroll">
+                        </div>
+                    </div>
+                </div>
+                <div id="div3" class="show">
+                    <style>
+                        #plant {
+                            border: inherit;
+                            width: 450px;
+                            height: 99.8%;
+                            background-color: inherit;
+                        }
+                        
+                        .alb {
+                            height: 17%;
+                            width: 97%;
+                            margin-left: 0.5%;
+                            margin-right: 0.5%;
+                            border: inherit;
+                        }
+                        
+                        input {
+                            height: 65px;
+                            width: 65px;
+                            border-radius: 10px;
+                            margin-left: 1%;
+                            padding-top: 1.5%;
+                        }
+                        
+                        .move {
+                            height: 16%;
+                        }
+                        
+                        name {
+                            margin-left: 4%;
+                            text-align: center;
+                        }
+                        
+                        footer {
+                            margin-right: 1%;
+                            margin-left: 1%;
+                        }
+                    </style>
+
+                    <div id="plant">
+                        <div class="alb row">
+                            <name class="col">
+                                <input type="image" src="icon\contacts.png" id="Contacts">
+                                <z>Contact</z>
+                            </name>
+                            <name class="col">
+                                <input type="image" src="icon\health.png" id="Health">
+                                <z>Health</z>
+                            </name>
+                            <name class="col">
+                                <input type="image" src="icon\files.png" id="Files">
+                                <z>Files</z>
+                            </name>
+                            <name class="col">
+                                <input type="image" src="icon\compass-icon-ios.png" id="Compass">
+                                <z>Compass</z>
+                            </name>
+                            <name class="col">
+                                <input type="image" src="icon\measure.png" id="Measurement">
+                                <z>Measurement</z>
+                            </name>
+                        </div>
+                        <div class="alb row">
+                            <name class="col">
+                                <input type="image" src="icon\calculator.png" id="Calculator">
+                                <z>Calculator</z>
+                            </name>
+                            <name class="col">
+                                <input type="image" src="icon\clock.png" id="Clock">
+                                <z>Clock</z>
+                            </name>
+                            <name class="col">
+                                <input type="image" src="icon\calendar.png" id="Calendar">
+                                <z>Calendar</z>
+                            </name>
+                            <name class="col">
+                                <input type="image" src="icon\weather.png" id="Weather">
+                                <z>Weather</z>
+                            </name>
+                            <name class="col">
+                                <input type="image" src="icon\podcasts.png" id="Podcasts">
+                                <z>Prodcasts</z>
+                            </name>
+
+                        </div>
+                        <div class="alb row">
+                            <name class="col">
+                                <input type="image" src="icon\game.png" id="Dice">
+                                <z>Marbles</z>
+                            </name>
+                            <name class="col">
+                                <input type="image" src="icon\2048.png" id="2048">
+                                <z>2048</z>
+                            </name>
+                            <name class="col">
+                                <input type="image" src="icon\notes.png" id="Notes">
+                                <z>Notes</z>
+                            </name>
+                            <name class="col">
+                                <input type="image" src="icon\reminders.png" id="Reminders">
+                                <z>Reminders</z>
+                            </name>
+                            <name class="col">
+                                <input type="image" src="icon\voice-memos.png" id="Recording">
+                                <z>Recording</z>
+                            </name>
+                        </div>
+                        <div class="alb"></div>
+                        <div class="move"></div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+                </script>
+                <script>
+                    $("document").ready(function() {
+                        $("#div1").hide();
+                        $("#div3").hide();
+                        $("#b2").css("background-color", "skyblue");
+                        $("#b1").click(function() {
+                            $("#div2").hide();
+                            $("#div3").hide();
+                            $("#div1").show();
+                            $("#b1").css("background-color", "SkyBlue");
+                            $("#b2").css("background-color", "lightgrey");
+                            $("#b3").css("background-color", "lightgrey");
+                        });
+                        $("#b2").click(function() {
+                            $("#div1").hide();
+                            $("#div3").hide();
+                            $("#div2").show();
+                            $("#b2").css("background-color", "SkyBlue");
+                            $("#b1").css("background-color", "lightgrey");
+                            $("#b3").css("background-color", "lightgrey");
+                        });
+                        $("#b3").click(function() {
+                            $("#div1").hide();
+                            $("#div2").hide();
+                            $("#div3").show();
+                            $("#b1").css("background-color", "lightgrey");
+
+                            $("#b2").css("background-color", "lightgrey");
+
+                            $("#b3").css("background-color", "SkyBlue");
+
+                        });
+                    });
+                </script>
+                <center>
+                    <style>
+                        button {
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                        }
+                    </style>
+
+                    <button id="b1"></button>
+                    <button id="b2"></button>
+                    <button id="b3"></button>
+                </center>
+            </div>
+            <footer style="background-color: lightblue; border-radius: 15px; margin-bottom: 1%" ;>
+                <style>
+                    input {
+                        margin-left: 3.5%;
+                    }
+                </style>
+                <div class="img">
+                    <input type="image" src="icon\phone.png" id="Phone">
+                    <input type="image" src="icon\ios-message.png" id="Messages">
+                    <input type="image" src="icon\news.png" id="News">
+                    <input type="image" src="icon\safari.png" id="Browser">
+                    <input type="image" src="icon\camera.png" id="Camera">
+                </div>
+            </footer>
+        </div>
+</body>
+
+</html>

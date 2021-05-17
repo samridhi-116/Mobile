@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $("document").ready(function() {
+            butq = 1;
+            butw = 1;
+            $("#butq").click(function() {
+
+                butq++;
+                if (butq % 2 == 0) {
+                    $("#p1").slideToggle();
+                    $("#butq").text(`Reveal`);
+                } else {
+                    $("#p1").slideToggle();
+                    $("#butq").text(`Hide`);
+                }
+
+            });
+            $("#butw").click(function() {
+
+                butw++;
+                if (butw % 2 == 0) {
+                    $("#p2").slideToggle();
+                    $("#butw").text(`Reveal`);
+                } else {
+                    $("#p2").slideToggle();
+                    $("#butw").text(`Hide`);
+                }
+
+            });
+            $("#hide").click(function() {
+                $("#aud").toggle();
+            });
+        });
+    </script>
+    <script>
+        function but1() {
+            document.getElementById("aud").src = "Namo Namo Lyrical Kedarnath Sushant Rajput Sara Ali Khan Amit Trivedi Amitabh B.mp3";
+        }
+
+        function but2() {
+            document.getElementById("aud").src = "03 - Happy Ending - Jaise Mera Tu [DJMaza.Info].mp3";
+        }
+
+        function but3() {
+            document.getElementById("aud").src = "[Songs.PK] Murder 2 - 04 - Phir Mohabbat.mp3";
+        }
+
+        function but4() {
+            document.getElementById("aud").src = "Vicky D-Mar Jayian (Romantic).mp3";
+        }
+
+        function but5() {
+            document.getElementById("aud").src = "02 pehli nazar mein.mp3";
+        }
+
+        function but6() {
+            document.getElementById("aud").src = "Qismat - (Mp3Song.fm).mp3";
+        }
+
+        function but7() {
+            document.getElementById("aud").src = "BROWN MUNDE AP DHILLON GURINDER GILL SHINDA KAHLON GMINXR.mp3";
+        }
+
+        function but8() {
+            document.getElementById("aud").src = "MAX - Lights Down Low feat. gnash (Official Video) (192  kbps).mp3";
+        }
+
+        function but9() {
+            document.getElementById("aud").src = "03 - Duaa.mp3";
+        }
+    </script>
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        .cara {
+            display: flex;
+            width: 100%;
+            background-color: white;
+            border: 1px solid black;
+            color: black;
+            opacity: 0.8;
+        }
+        
+        h2 {
+            margin-right: 4%;
+            width: 80%;
+        }
+        
+        h3 {
+            margin-left: 4%;
+            margin-right: 4%;
+            width: 80%;
+        }
+        
+         ::-webkit-scrollbar {
+            width: 5px;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background: #555;
+        }
+        
+        audio {
+            width: 100%;
+        }
+        
+        .cara:hover {
+            opacity: 1;
+            shadow: 0 0 10 black;
+        }
+        
+        footer {
+            align-self: baseline;
+            float: top;
+        }
+        
+        main {
+            height: 87vh;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            margin-bottom: 1vh;
+            scrollbar-width: thin;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <main>
+            <div class="cara">
+                <h2>Playlist 1</h2> <button id="butq" style="width:55px;height:55px;margin-top: 10px;border-radius: 50%;">Hide</button>
+            </div>
+            <div id="p1" class="Playlist">
+                <div class="cara">
+                    <h3>Namo Namo</h3>
+                    <button onclick="but1()">Play</button>
+                </div>
+
+                <div class="cara">
+                    <h3>Pehli Nazar mein</h3>
+                    <button onclick="but5()">Play</button>
+                </div>
+
+
+                <div class="cara">
+                    <h3>Jaise Mera Tu</h3>
+                    <button onclick="but2()">Play</button>
+                </div>
+
+
+                <div class="cara">
+                    <h3>Phir Mohabbat</h3>
+                    <button onclick="but3()">Play</button>
+                </div>
+
+
+                <div class="cara">
+                    <h3>Mar Jaiyan</h3>
+                    <button onclick="but4()">Play</button>
+                </div>
+
+                <div class="cara">
+                    <h3>Qismat</h3>
+                    <button onclick="but6()">Play</button>
+                </div>
+
+
+                <div class="cara">
+                    <h3>Brown Munde</h3>
+                    <button onclick="but7()">Play</button>
+                </div>
+
+
+                <div class="cara">
+                    <h3>Lights Down Low</h3>
+                    <button onclick="but8()">Play</button>
+                </div>
+
+                <div class="cara">
+                    <h3>Duaa Shanghai</h3>
+                    <button onclick="but9()">Play</button>
+                </div>
+            </div>
+            <div class="cara">
+                <h2>Playlist 2 </h2> <button id="butw" style="width:55px;height:55px;margin-top: 10px;border-radius: 50%;">Hide</button>
+            </div>
+            <div id="p2">
+                <div class="cara">
+                    <h3>Pehli Nazar mein</h3>
+                    <button onclick="but1()">Play</button>
+                </div>
+
+
+                <div class="cara">
+                    <h3>Jaise Mera Tu</h3>
+                    <button onclick="but2()">Play</button>
+                </div>
+
+
+                <div class="cara">
+                    <h3>Phir Mohabbat</h3>
+                    <button onclick="but3()">Play</button>
+                </div>
+
+
+                <div class="cara">
+                    <h3>Mar Jaiyan</h3>
+                    <button onclick="but4()">Play</button>
+                </div>
+                <div class="cara">
+                    <h3>Pehli Nazar mein</h3>
+                    <button onclick="but1()">Play</button>
+                </div>
+
+
+                <div class="cara">
+                    <h3>Jaise Mera Tu</h3>
+                    <button onclick="but2()">Play</button>
+                </div>
+
+
+                <div class="cara">
+                    <h3>Phir Mohabbat</h3>
+                    <button onclick="but3()">Play</button>
+                </div>
+
+
+                <div class="cara">
+                    <h3>Mar Jaiyan</h3>
+                    <button onclick="but4()">Play</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <audio id="aud" src="" controls autoplay></audio>
+        </footer>
+
+    </center>
+</body>
+
+</html>

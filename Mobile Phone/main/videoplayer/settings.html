@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+    <style>
+        .box {
+            width: 450px;
+            height: 650px;
+            position: relative;
+        }
+        
+        .box1 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: 1;
+        }
+        
+        .box2 {
+            opacity: 1;
+            width: 100%;
+        }
+        
+        .overlay {
+            z-index: 10;
+            margin: 40px;
+            opacity: 1;
+        }
+        
+        #box {
+            overflow-y: scroll;
+        }
+        
+        #wallpaper {
+            background-color: grey;
+            border: 2px solid black;
+        }
+        
+        #wallpaper>div {
+            height: 20vh;
+            font-size: 20px;
+            font-weight: 700;
+            height: 4vw;
+            border: 1px solid white;
+        }
+        
+        h2 {
+            margin: 2px;
+        }
+        
+        #wall {
+            padding: 0px;
+            display: flex;
+            font-size: 20px;
+            font-weight: 700;
+            height: 4vw;
+            border: 1px solid white;
+            background-color: grey;
+        }
+        
+        #wallpaper>div:hover {
+            box-shadow: 0 0 10px black;
+        }
+        
+        button {
+            margin-left: 10vw;
+        }
+        
+        #wall :hover {
+            box-shadow: 0 0 10px black;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $("document").ready(function() {
+            $(".box1:nth-child(2)").hide();
+            $("#wall").click(function() {
+                $("#wallpaper").slideToggle();
+            });
+            $("#btn").click(function() {
+                $(".box1:nth-child(2)").slideToggle();
+            });
+            $("#btn1").click(function() {
+                $(".box1:nth-child(2)").slideToggle();
+            });
+            $("#crimson").click(function() {
+                document.getElementById("main").style.backgroundColor = "crimson";
+                $(".box1:nth-child(2)").slideUp();
+                $(".box1:nth-child(2)").slideDown();
+            });
+            $("#SkyBlue").click(function() {
+                document.getElementById("main").style.backgroundColor = "Skyblue";
+                $(".box1:nth-child(2)").slideUp();
+                $(".box1:nth-child(2)").slideDown();
+            });
+            $("#Orange").click(function() {
+                document.getElementById("main").style.backgroundColor = "orange";
+                $(".box1:nth-child(2)").slideUp();
+                $(".box1:nth-child(2)").slideDown();
+            });
+            $("#pink").click(function() {
+                document.getElementById("main").style.backgroundColor = "pink";
+                $(".box1:nth-child(2)").slideUp();
+                $(".box1:nth-child(2)").slideDown();
+            })
+
+        });
+    </script>
+    <div class="box">
+        <div id="box">
+            <button id="btn">settings</button>
+        </div>
+        <div id="box" class="box1 " style="background: #006969;">
+            <div style="display:flex;">
+                <button id="btn1">
+                    <- </button>
+                <h3>setting</h3>
+            </div>
+            <div id="wall">
+                wallpaper
+                <button>Reveal</button>
+            </div>
+            <div id="wallpaper">
+                <div>
+                    Crimson
+                    <button id="crimson">Change</button>
+                </div>
+                <div>
+                    Sky Blue
+                    <button id="SkyBlue">Change</button>
+                </div>
+                <div>
+                    Orange
+                    <button id="Orange">Changee</button>
+                </div>
+                <div>
+                    Pink
+                    <button id="pink">Change</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

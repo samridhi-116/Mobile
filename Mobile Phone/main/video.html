@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: white;
+        }
+        
+        .flex {
+            display: flex;
+        }
+        
+        .cara {
+            display: flex;
+            width: 100%;
+            background-color: white;
+            border: 1px solid black;
+            color: black;
+            opacity: 0.8;
+        }
+        
+        .cara:hover {
+            opacity: 1;
+            box-shadow: 0 0 10 black;
+        }
+        
+        h2 {
+            margin-left: 4%;
+            margin-right: 4%;
+            width: 80%;
+        }
+        
+        main {
+            height: 42vh;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            margin-bottom: 1vh;
+            scrollbar-width: thin;
+        }
+        
+         ::-webkit-scrollbar {
+            width: 5px;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $("document").ready(function() {
+            $("#CSCP").click(function() {
+                $("#video").attr("src", "something.mp4");
+            });
+            $("#CP").click(function() {
+                $("#video").attr("src", "hymn.mp4");
+            });
+            $("#CP").click(function() {
+                $("#video").attr("src", "hymn.mp4");
+            });
+            $("#But1").click(function() {
+                $("#video").attr("src", "Gone Gone Gone.mp4");
+            });
+            $("#But2").click(function() {
+                $("#video").attr("src", "aaoge.mp4");
+            });
+        });
+    </script>
+
+    <video id="video" width="430" height="350" autoplay controls>
+    </video>
+    </div>
+    <main>
+        <div class="flex cara">
+            <h2>Something Just Like This</h2>
+
+            <button id="CSCP">Play</button>
+        </div>
+        <div class="flex cara">
+            <h2>Hymn for the Weekend</h2>
+            <button id="CP">Play</button>
+        </div>
+        <div class="flex cara">
+            <h2>Gone Gone Gone</h2>
+            <button id="But1">Play</button>
+        </div>
+        <div class="flex cara">
+            <h2>Aaoge Tum Kabhi</h2>
+            <button id="But2">Play</button>
+        </div>
+    </main>
+</body>
+
+</html>
